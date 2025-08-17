@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> ProjX  — Создавай. Делись. Вдохновляй.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="regestr.css">
+</head>
+<body>
+  
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+
+  <header class="container glass">
+    <div class="logo">Р</div>
+    <nav class="nav">
+      <a href="#home">Главная</a>
+      <a href="#projects">Проекты</a>
+      <a href="#challenges">Челленджи</a>
+      <a href="#community">Сообщество</a>
+      <a href="#about">О нас</a>
+    </nav>
+    <div class="actions">
+      <button id="themeToggle" class="btn btn-outline" aria-label="Переключить тему">Тема</button>
+    <button class="btn btn-primary"
+     onclick="document.getElementById('myModal').style.display='block'">
+  Зарегистрироваться
+</button>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <h2>Регистрация успешна!</h2>
+    <p>Добро пожаловать!</p>
+    <button onclick="document.getElementById('myModal').style.display='none'">
+      Закрыть
+    </button>
+  </div>
+</div>
+      <button class="menu" aria-label="Меню">☰</button>
+    </div>
+
+    </header>
+
+  <main id="home" class="container">
+    <section class="hero reveal">
+      <h1>Создавай. Делись. Вдохновляй.</h1>
+      <p class="sub">Платформа для творцов: публикуй проекты, участвуй в челленджах и находи единомышленников.</p>
+      <div class="cta">
+        <a href="#projects" class="btn btn-primary">Начать сейчас</a>
+        <a href="#features" class="btn btn-ghost">Узнать больше</a>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="section-head">
+        <h2>Популярные проекты</h2>
+        <div class="filters">
+          <button class="chip active">Все</button>
+          <button class="chip">3D</button>
+          <button class="chip">Иллюстрации</button>
+          <button class="chip">Брендинг</button>
+        </div>
+      </div>
+      <div class="grid cards" id="projectGrid">
+      
+        <article class="card">
+          <div class="thumb gradient g1" role="img" aria-label="Абстрактная композиция"></div>
+          <div class="card-body">
+            <h3>Абстрактная композиция</h3>
+            <p class="meta">#иллюстрация</p>
+            <div class="card-actions">
+              <button class="icon-btn" aria-label="Нравится">❤ <span>139</span></button>
+              <button class="icon-btn" aria-label="Комментарии">💬 <span>12</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb gradient g2" role="img" aria-label="Цифровая иллюстрация"></div>
+          <div class="card-body">
+            <h3>Цифровая иллюстрация</h3>
+            <p class="meta">#портрет</p>
+            <div class="card-actions">
+              <button class="icon-btn">❤ <span>96</span></button>
+              <button class="icon-btn">💬 <span>9</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb gradient g3" role="img" aria-label="3D робот"></div>
+          <div class="card-body">
+            <h3>3D робот</h3>
+            <p class="meta">#3d</p>
+            <div class="card-actions">
+              <button class="icon-btn">❤ <span>309</span></button>
+              <button class="icon-btn">💬 <span>2</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb gradient g4" role="img" aria-label="Постер"></div>
+          <div class="card-body">
+            <h3>Постер</h3>
+            <p class="meta">#типографика</p>
+            <div class="card-actions">
+              <button class="icon-btn">❤ <span>182</span></button>
+              <button class="icon-btn">💬 <span>5</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="features" class="section reveal">
+      <h2>Возможности</h2>
+      <div class="grid features">
+        <div class="feature glass">
+          <div class="icon">📤</div>
+          <h3>Загружай работы</h3>
+          <p>Поддержка изображений и 3D превью (позже можно расширить).</p>
+        </div>
+        <div class="feature glass">
+          <div class="icon">🏆</div>
+          <h3>Участвуй в челленджах</h3>
+          <p>Соревнуйся за бейджи и поднимай уровень профиля.</p>
+        </div>
+        <div class="feature glass">
+          <div class="icon">💬</div>
+          <h3>Получай фидбек</h3>
+          <p>Комментарии, реакции и упоминания.</p>
+        </div>
+        <div class="feature glass">
+          <div class="icon">🌓</div>
+          <h3>Тёмная/светлая тема</h3>
+          <p>Один клик — и вся палитра меняется.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial reveal">
+      <div class="avatar"></div>
+      <blockquote>Эта платформа помогла мне представить свои работы широкой аудитории и вдохновилась от других творческих людей.</blockquote>
+      <cite>— Brimstoun</cite> 
+    </section>
+  </main>
+
+  <footer class="container">
+    <nav class="footer-nav">
+      <a href="#home">Главная</a>
+      <a href="#projects">Проекты</a>
+      <a href="#challenges">Челленджи</a>
+      <a href="#community">Сообщество</a>
+    </nav>
+    <div class="socials">
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="Twitter">x</a>
+      <a href="#" aria-label="LinkedIn">in</a>
+    </div>
+    <p class="copy">© 2025 ProjX </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
